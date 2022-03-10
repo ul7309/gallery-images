@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gallery images</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+
+  <body>
+    <div class="container">
+      <form class="form js-form">
+        <div class="form__row">
+            <input
+            type="text"
+            class="form__input js-input"
+            placeholder="Введите URL изображения"
+          />
+    
+          <button type="button" class="form__btn js-form-btn">Загрузить</button>
+        </div>
+
+        <div class="form__row">
+          <div class="form__drag">
+            Выберите файл или перетащите его сюда.
+            <input type="file" class="form__input form__input--file js-input-file" />
+          </div>
+        </div>
+      </form>
+
+      <div class="gallery js-gallery"></div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
